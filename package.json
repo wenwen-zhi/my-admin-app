@@ -5,7 +5,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "update": "npm run build && git add . && git commit -m \"update something\" && git push"
   },
   "dependencies": {
     "axios": "^1.5.0",
@@ -16,6 +17,7 @@
     "less": "^4.1.2",
     "less-loader": "^6.0.0",
     "mockjs": "^1.1.0",
+    "oh-vue-icons": "^1.0.0-rc3",
     "vue": "^2.6.14",
     "vue-router": "^3.6.5",
     "vuex": "^3.6.2"
@@ -27,6 +29,7 @@
     "@vue/cli-plugin-babel": "~5.0.0",
     "@vue/cli-plugin-eslint": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
+    "@vue/composition-api": "^1.7.2",
     "babel-plugin-component": "^1.1.1",
     "eslint": "^7.32.0",
     "eslint-plugin-vue": "^8.0.3",

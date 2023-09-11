@@ -18,6 +18,11 @@
       </el-breadcrumb>
     </div>
     <div class="r-content">
+      <el-link
+        href="https://github.com/wenwen-zhi/my-admin-app"
+        style="margin-right: 20px"
+        >Github</el-link
+      >
       <el-dropdown @command="handleClick">
         <span class="el-dropdown-link">
           <img class="user" src="../assets/images/user.png" alt="" />
@@ -33,10 +38,12 @@
 <script>
 import { mapState } from "vuex";
 import Cookie from "js-cookie";
+
 export default {
   data() {
     return {};
   },
+
   methods: {
     handleMenu() {
       this.$store.commit("collapseMenu");
@@ -72,6 +79,12 @@ export default {
     margin-left: 10px;
   }
   .r-content {
+    display: flex;
+    flex-flow: row;
+    .github-icon {
+      color: wheat;
+      width: 40px;
+    }
     .user {
       width: 40px;
       height: 40px;

@@ -26,6 +26,9 @@
         >登录</el-button
       >
     </el-form-item>
+    <div class="hint">
+      <p>用户名：admin 密码：admin</p>
+    </div>
   </el-form>
 </template>
 <script>
@@ -94,6 +97,11 @@ export default {
 
   .el-input {
     width: 198px;
+  }
+
+  .hint {
+    opacity: 0.5;
+    text-align: center;
   }
 }
 </style>
