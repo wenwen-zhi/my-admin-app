@@ -41,7 +41,8 @@ export default {
         },
         // 动态注册路由
         addMenu(state, router) { 
-            if (! Cookie.get('menu')) return
+            if (!Cookie.get('menu')) return
+            // const menu=JSON.parse(Cookie.get('menu') )
         }
     }
 }
