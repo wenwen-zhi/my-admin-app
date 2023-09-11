@@ -4,4 +4,5 @@ module.exports = defineConfig({
   transpileDependencies: true,
   lintOnSave: false,
   outputDir: path.join(__dirname, 'docs'),
+  publicPath:"/my-admin-app"
 })
