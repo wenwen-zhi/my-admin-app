@@ -81,15 +81,16 @@ export default {
   .l-content {
     display: flex;
     align-items: center;
-    /deep/.el-breadcrumb_item {
-      .el-breadcrumb_inner {
+
+    /deep/.el-breadcrumb__item {
+      .el-breadcrumb__inner {
         font-weight: normal;
         &.is-link {
           color: #666;
         }
       }
       &:last-child {
-        .el-breadcrumb_inner {
+        .el-breadcrumb__inner {
           color: #fff;
         }
       }
